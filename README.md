@@ -44,6 +44,10 @@ Sniffspot is the largest community of safe, private spaces for dogs to play
   ```
 
   ```
+  yarn
+  ```
+
+  ```
    rails db:create 
   ```
 
