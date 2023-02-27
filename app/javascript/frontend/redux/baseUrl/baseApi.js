@@ -6,8 +6,11 @@ const CSRFtoken = document.querySelector('[name="csrf-token"]') || {
 	content: "no-csrf-token",
 };
 
+const dev_url = `http://localhost:3000/api/v1`
+const prod_url = "https://sniffspot-app.onrender.com/api/v1"
+
 export default axios.create({
-	baseURL: `http://localhost:3000/api/v1`,
+	baseURL: prod_url,
 	headers: {
 		"Content-Type": "application/json",
 		common: {
@@ -17,7 +20,7 @@ export default axios.create({
 });
 
 export const multipartAPi = axios.create({
-	baseURL: `http://localhost:3000/api/v1`,
+	baseURL: prod_url,
 	headers: {
 		"Content-Type": "multipart/form-data",
 		common: {
