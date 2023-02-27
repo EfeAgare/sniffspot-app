@@ -81,6 +81,4 @@ test:
 #
 production:
   <<: *default
-  database: sniffspot_app_production
-  username: sniffspot_app
-  password: <%= ENV['SNIFFSPOT_APP_DATABASE_PASSWORD'] %>
+  url: <%= ENV['DATABASE_URL'] %>
