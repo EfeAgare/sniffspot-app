@@ -32,3 +32,17 @@ local:
 #   service: Mirror
 #   primary: local
 #   mirrors: [ amazon, google, microsoft ]
+
+cloudinary_defaults: &cloudinary_defaults
+  service: Cloudinary
+  secure: true
+
+cloudinary_development:
+  tags:
+    - development
+  <<: *cloudinary_defaults
+
+cloudinary_production:
+  tags:
+    - production
+  <<: *cloudinary_defaults
