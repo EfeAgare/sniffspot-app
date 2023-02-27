@@ -31,13 +31,13 @@
  }
 
  .css-hyum1k-MuiToolbar-root {
-   box-shadow: 0 0 16px rgb(0 0 0 / 15%) !important;
+   box-shadow: 0 0 16px RGB(0 0 0 / 15%) !important;
    height: 80px !important;
  }
 
  .css-v526sl-MuiPaper-root-MuiAppBar-root {
    background-color: #fff !important;
-   box-shadow: 0 0 16px rgb(0 0 0 / 15%) !important;
+   box-shadow: 0 0 16px RGB(0 0 0 / 15%) !important;
    display: flex !important;
    height: 80px !important;
    justify-content: space-between !important;
